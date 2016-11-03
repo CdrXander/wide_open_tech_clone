@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+
+body, ul {
+	margin: 0;
+	padding: 0;
+}
+
+/*Jumbotron Elements*/
+nav {
+	height: 10vh;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	padding: 10px;
+}
+
+.jumbotron {
+	height: 50vh;
+	width: 100vw;
+	background-image: url("./img/wot-masthead-dark.jpg");
+	background-size: cover;
+	background-position-y:50%;
+	background-position-x:50%; 
+}
+
+nav > img {
+	height: 40px;
+	float: left;
+}
+
+.icon-bars {
+	font-size:40px;
+	float: right;
+}
+
+.menu-list {
+	display: none;
+}
+
+
+.green {
+	color:;
+}
+
+/*Main Elements*/
+.main-content {
+	text-align: center;
+	width: 100%
+	border: 1px solid green;
+}
+
+.container {
+	width: 100%;
+	border: 1px solid black;
+}
+
+.learn-about {
+	border-color: yellow;
+	height: 40vh; 
+}
+
+.services {
+	border-color: red;
+	height: 40vh;
+}
+
+.partners {
+	border-color: blue;
+	height: 40vh;
+}
+
+
+@media(min-width: 426px) {
+	nav {
+		background-color: transparent;
+	}
+
+	.icon-bars {
+		display: none;
+	}
+
+	.menu-list {
+		float:right;
+		display: inline;
+		color: #FFF;
+		font-family: "Lato";
+		font-size:20px;
+
+	}
+	.menu-list > li {
+		display: inline;
+		margin-right: 5px;
+	}
+}
