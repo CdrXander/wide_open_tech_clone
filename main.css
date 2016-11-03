@@ -7,7 +7,11 @@ body, ul {
 	padding: 0;
 }
 
-/*Jumbotron Elements*/
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+/*	=	=	=	Jumbotron Elements	=	=	=	*/
 nav {
 	height: 10vh;
 	width: 100%;
@@ -17,12 +21,64 @@ nav {
 }
 
 .jumbotron {
-	height: 50vh;
+	height: 60vh;
 	width: 100vw;
+
+	text-align: center;
+
 	background-image: url("./img/wot-masthead-dark.jpg");
 	background-size: cover;
 	background-position-y:50%;
 	background-position-x:50%; 
+}
+
+.jumbotron-text {
+	color:#FFF;
+	font-family: "Oswald";
+}
+
+.jumbotron-header-small {
+	font-size: 18px;
+	display: inline-block;
+}
+
+.jumbotron-header-med {
+	font-size: 22px;
+}
+
+.jumbotron-header-large {
+	font-size: 75.6px;
+}
+
+.sub-header {
+	display: block;
+	font-size: 18px;
+	margin-right: 20%;
+	margin-left: 20%;	
+	position: relative;
+	font-weight: 500;
+}
+
+.sub-header:before {
+	content: " ";
+    display: block;
+    background: #fff;
+    height: 9px;
+    width: 20%;
+    position: absolute;
+    right: -20%;
+    top: 5px;
+}
+
+.sub-header:after {
+	content: " ";
+    display: block;
+    background: #fff;
+    height: 9px;
+    width: 20%;
+    position: absolute;
+    left: -20%;
+    top: 5px;
 }
 
 nav > img {
@@ -39,38 +95,118 @@ nav > img {
 	display: none;
 }
 
-
+/*	=	=	=	Color Elements	=	=	=	*/
 .green {
-	color:;
+	color:#BDD436;
 }
 
-/*Main Elements*/
-.main-content {
-	text-align: center;
-	width: 100%
-	border: 1px solid green;
+.orange {
+	color: #FE7F39;
 }
 
+.bg-gray {
+	background-color: #F0F0F0;
+}
+
+.bg-dark-gray {
+	background-color: #6A787C;
+}
+
+
+/*	=	=	=	Button Stuffs	=	=	=	*/
+.button-container {
+	padding: 50px 15px;
+}
+
+.button-green {
+	background-color: #BDD436;
+	border-radius: 25px;
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	width: 100%;
+
+	padding: 11px 36px;
+	font-weight: 700;
+}
+
+
+
+
+/*	=	=	=	Main Elements	=	=	=	*/
 .container {
 	width: 100%;
 	border: 1px solid black;
 }
 
-.learn-about {
+#main-content {
+	text-align: center;
+	width: 100%
+	font-weight:400;
+	font-size: 24px;
+	line-height: 36px;
+	color: #6A787C;
+
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#learn-about {
 	border-color: yellow;
 	height: 40vh; 
 }
 
-.services {
+#services {
 	border-color: red;
 	height: 40vh;
 }
 
-.partners {
+#partners {
 	border-color: blue;
 	height: 40vh;
 }
 
+
+.works {
+	font-size: 42px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.works .green {
+	font-style: bold;
+}
+
+
+/*	=	=	=	Sprite Classes	=	=	=*/
+
+.sprite-home:before {
+	content: " ";
+	display: block;
+	background-image: url("./img/sprite_home.png");
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	height: 160px;
+}
+
+.works:before {
+	width: 75px;
+	height: 75px;
+	background-position: -22px -113px;
+}
+
+.idea:before {
+	width: 131px;
+	background-position: -311px -100px;
+}
+
+.arrow:before {
+	width: 74px;
+	background-position: -227px -91px;
+}
+
+.power:before {
+	width: 94px;
+	background-position: -119px -100px;
+}
 
 @media(min-width: 426px) {
 	nav {
