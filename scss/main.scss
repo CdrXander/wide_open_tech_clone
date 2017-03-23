@@ -1,3 +1,7 @@
+
+$theme-green: #BDD436;
+
+
 * {
 	box-sizing: border-box;
 	text-align: center;
@@ -14,7 +18,7 @@ body {
 }
 
 a {
-	color:#BDD436;
+	color:$theme-green;
 	text-decoration: none;
 }
 
@@ -38,7 +42,7 @@ nav {
 
 	text-align: center;
 
-	background-image: url("./img/wot-masthead-dark.jpg");
+	background-image: url("../img/wot-masthead-dark.jpg");
 	background-size: cover;
 	background-position-y:50%;
 	background-position-x:50%; 
@@ -106,7 +110,7 @@ nav > img {
 
 /*	=	=	=	Color Elements	=	=	=	*/
 .green {
-	color:#BDD436;
+	color:$theme-green;
 }
 
 .orange {
@@ -129,7 +133,7 @@ nav > img {
 }
 
 .button-green {
-	background-color: #BDD436;
+	background-color: $theme-green;
 	border-radius: 25px;
 	color: white;
 	font-family: "Open Sans", sans-serif;
@@ -152,7 +156,7 @@ nav > img {
 
 #main-content {
 	text-align: center;
-	width: 100%
+	width: 100%;
 	font-weight:400;
 	font-size: 24px;
 	line-height: 36px;
@@ -180,7 +184,7 @@ nav > img {
 }
 
 .help-card p {
-	color: #858585
+	color: #858585;
 	font-size: 16px;
 }
 
@@ -223,7 +227,7 @@ nav > img {
 #contact h2:after {
 	content: " ";
     display: block;
-    background: #BDD436;
+    background: $theme-green;
     height: 8px;
     width: 25%;
     margin: auto;
@@ -236,7 +240,7 @@ nav > img {
 .sprite-home:before {
 	content: " ";
 	display: block;
-	background-image: url("./img/sprite_home.png");
+	background-image: url("../img/sprite_home.png");
 	margin: 0 auto;
 	background-repeat: no-repeat;
 	height: 160px;
@@ -267,7 +271,7 @@ nav > img {
 	height: 30px;
 	width: 27px;
 	display: block;
-	background: url("./img/sprite_home.png");
+	background: url("../img/sprite_home.png");
 	content: " ";
 	background-position: -46px -292px;
 	margin: 20px auto;

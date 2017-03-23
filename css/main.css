@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  text-align: center; }
+
+body, ul {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500; }
+
+a {
+  color: #BDD436;
+  text-decoration: none; }
+
+a:hover {
+  color: #97A2A7; }
+
+/*	=	=	=	Jumbotron Elements	=	=	=	*/
+nav {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  padding: 10px;
+  z-index: 999; }
+
+.jumbotron {
+  height: 60vh;
+  width: 100vw;
+  text-align: center;
+  background-image: url("../img/wot-masthead-dark.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+  background-position-x: 50%; }
+
+.jumbotron-text {
+  color: #FFF;
+  font-family: "Oswald";
+  font-weight: 300;
+  padding-top: 70px; }
+
+.jt-header-med {
+  font-size: 22px; }
+
+.jt-header-large {
+  font-size: 75.6px; }
+
+.sub-header {
+  display: block;
+  font-size: 18px;
+  margin-right: 20%;
+  margin-left: 20%;
+  position: relative;
+  font-weight: 500; }
+
+.sub-header:before {
+  content: " ";
+  display: block;
+  background: #fff;
+  height: 9px;
+  width: 20%;
+  position: absolute;
+  right: -20%;
+  top: 5px; }
+
+.sub-header:after {
+  content: " ";
+  display: block;
+  background: #fff;
+  height: 9px;
+  width: 20%;
+  position: absolute;
+  left: -20%;
+  top: 5px; }
+
+nav > img {
+  height: 40px;
+  float: left; }
+
+.icon-bars {
+  font-size: 40px;
+  float: right; }
+
+.menu-list {
+  display: none; }
+
+/*	=	=	=	Color Elements	=	=	=	*/
+.green {
+  color: #BDD436; }
+
+.orange {
+  color: #FE7F39; }
+
+.bg-gray {
+  background-color: #F0F0F0; }
+
+.bg-dark-gray {
+  background-color: #6A787C;
+  color: white; }
+
+/*	=	=	=	Button Stuffs	=	=	=	*/
+.button-container {
+  padding: 50px 15px; }
+
+.button-green {
+  background-color: #BDD436;
+  border-radius: 25px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  padding: 11px 36px;
+  font-weight: 700; }
+
+/*	=	=	=	Main Elements	=	=	=	*/
+.container {
+  width: 100%;
+  padding: 40px 0;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+#main-content {
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #6A787C; }
+
+#learn-about {
+  color: #97A2A7;
+  font-size: 18px; }
+
+.help-card {
+  background-color: white;
+  padding: 30px;
+  margin: 20px; }
+
+.help-card h3 {
+  color: #40666d;
+  font-size: 24px; }
+
+.help-card p {
+  color: #858585;
+  font-size: 16px; }
+
+#partners {
+  padding: 0; }
+
+.img-resp {
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
+.title .green {
+  font-weight: bold; }
+
+.sprite-home {
+  margin: 50px 0;
+  padding: 15px; }
+
+.link-arrow {
+  font-size: 14px; }
+
+.title {
+  font-size: 42px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #6A787C; }
+
+#contact h2:after {
+  content: " ";
+  display: block;
+  background: #BDD436;
+  height: 8px;
+  width: 25%;
+  margin: auto;
+  margin-top: 10px; }
+
+/*	=	=	=	Sprite Classes	=	=	=*/
+.sprite-home:before {
+  content: " ";
+  display: block;
+  background-image: url("../img/sprite_home.png");
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  height: 160px; }
+
+.works:before {
+  width: 75px;
+  height: 75px;
+  background-position: -22px -113px; }
+
+.idea:before {
+  width: 131px;
+  background-position: -311px -100px; }
+
+.arrow:before {
+  width: 74px;
+  background-position: -227px -91px; }
+
+.power:before {
+  width: 94px;
+  background-position: -119px -100px; }
+
+.link-arrow:after {
+  height: 30px;
+  width: 27px;
+  display: block;
+  background: url("../img/sprite_home.png");
+  content: " ";
+  background-position: -46px -292px;
+  margin: 20px auto; }
+
+@media (min-width: 426px) {
+  nav {
+    background-color: transparent;
+    padding: 30px; }
+  .jumbotron-text {
+    padding-top: 80px;
+    max-width: 760px;
+    margin: 0 auto; }
+  .jt-header-med {
+    text-align: left;
+    margin-left: 2em; }
+  .jt-header-large {
+    font-size: 152px; }
+  .button-container {
+    margin-left: 33.33%;
+    width: 33.33%; }
+  .icon-bars {
+    display: none; }
+  .menu-list {
+    float: right;
+    display: inline;
+    color: #FFF;
+    font-family: "Lato";
+    font-size: 20px; }
+  .menu-list > li {
+    display: inline;
+    margin-right: 5px; } }
+
+/*# sourceMappingURL=main.css.map */
